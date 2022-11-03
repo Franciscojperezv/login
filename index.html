@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvh5OpVfEzZara1q9hvgYWRTCvXeXqeh-Pw&usqp=CAU">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form class="login">
+        <h1>Inicie sesión en Finca Experimental AV</h1>
+            <img class="bottom-image" src="leaf.svg" alt="">
+        <input type="text" name="username" id="username" class="login-input" placeholder="Nombre de usuario" autofocus onclick="clean()">
+        <div class="pswd-div">
+            <input type="password" name="password" id="password" class="login-input password" placeholder="Contraseña" onclick="clean()">
+            <img class="show-password_button" src="eye.svg" alt="see" onclick="seePassword()"> 
+        </div>
+        <div class="username-error"><p id="error_text"></p></div>
+        <button class="login-submit" onclick="submitButton()">Iniciar sesión</button>
+            <p class="login-text">Si olvidó su contraseña, contacte al administrador</p>
+    </form>
+</body>
+</html>
+
